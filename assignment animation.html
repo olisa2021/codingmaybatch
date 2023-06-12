@@ -1,0 +1,174 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+        .container{
+            background-image:url("tech2.jpg");
+            /* background-color: red; */
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            background-image:url("tech2.jpg");
+            animation-iteration-count: infinite;
+            animation-name: bortex;
+            animation-duration: 20s; 
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        @keyframes bortex{
+            0%{
+                background-image: url("tech2.jpg");
+                
+            }
+            33.3%{
+                background-image:url("tech3.jpg");
+                top: 0px;
+            }
+            66.7%{
+                background-image:url("tech4.jpg") ;
+            }
+            100%{
+                background-image: url("tech2.jpg");
+            }
+        }
+         .slide{
+           position: relative;
+           text-align: center;
+           margin-left: auto;
+           width: 40%;
+           margin-right: auto;
+           top: 200px;
+           height: 420px;
+           overflow: hidden;
+           /* border: 5px solid; */
+         }
+        button{
+            padding: 10px 30px;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+        }
+        .item{
+            position: absolute;
+            top: 70%;
+            text-align: center;
+            margin-left: 100px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+         .one{
+        animation-name: txtflyin;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        
+            
+        }
+        @keyframes txtflyin{
+            0%{
+                margin-top:0px;
+                top: 0px;
+            }
+            33.3%{
+                margin-top:1000px;
+            }
+            66.7%{
+                margin-top:1000px;
+            }
+            100%{
+                margin-top: 0px;
+                top: 0px;
+            }
+        }
+        .two{
+         top: 450px;
+         animation-name: two;
+         animation-iteration-count: infinite;
+         animation-duration: 20s;
+        }
+        @keyframes two{
+            0%{
+                margin-top: 1000px;
+            }
+            33.3%{
+                margin-top: 0px;
+                top: 0px;
+            }
+            66.7%{
+                margin-top: 1000px;
+            }
+            100%{
+                margin-top: 1000px;
+            }
+        }
+        .three{
+            top: 900px;
+            animation-name: three;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes three{
+            0%{
+                margin-top: 1000px;
+            }
+            33.3%{
+                margin-top: 1000px;
+            }
+            66.7%{
+                margin-top: 0px;
+                top: 0px;
+            }
+            100%{
+                margin-top: 1000px;
+            }
+        }
+       </style>
+</head>
+<body>
+    <div class="" >
+        <div class="slide">
+     <div class="item one">
+        <h2>
+            Welcome to olisa s Page
+        </h2>
+        <br>
+        <button>Get started</button>
+     </div>
+
+
+     <div class="item two">
+        <h2>
+            Only those who apply
+          <br>
+          the principle of design
+          <br>
+          are the designers
+        </h2>
+        <button>Get started</button>
+     </div>
+
+     <div class="item three">
+        <h2>
+            A trial will convince You
+        </h2>
+        <button>Get started</button>
+     </div>
+     </div>
+
+
+     
+    </div>
+</body>
+</html>
