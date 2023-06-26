@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment calculator</title>
+    <style>
+        input{
+            border: solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <input type="number" class="input1">
+        <span class="span1">+</span>
+        <input type="number" class="input2">
+         <button class="btn1">=</button>
+         <!-- <br> -->
+         <!-- <input type="number" class="input3"> -->
+        <span class="span2"></span>
+    </div>
+
+    <script>
+        let div=document.querySelector(".box1")
+        let inputone=document.querySelector(".input1")
+        let inputtwo=document.querySelector(".input2")
+        let spantwo=document.querySelector(".span2")
+        let spanone=document.querySelector(".span1")
+        let button1=document.querySelector(".btn1")
+
+        button1.addEventListener("click", function calculator(){
+            let result=parseInt(inputone.value)+parseInt(inputtwo.value);
+
+            spantwo.innerHTML=result;
+            console.log(result)
+        })
+
+    </script>
+    <br>
+    <div class="box2">
+        <input type="number" class="input3">
+        <span class="span3">-</span>
+        <input type="number" class="input4">
+         <button class="btn2">=</button>
+         <!-- <br> -->
+         <!-- <input type="number" class="input3"> -->
+        <span class="span4"></span>
+    </div>
+    <script>
+        let div2=document.querySelector(".box2")
+        let inputthree=document.querySelector(".input3")
+        let inputfour=document.querySelector(".input4")
+        let spanthree=document.querySelector(".span3")
+        let spanfour=document.querySelector(".span4")
+        let button2=document.querySelector(".btn2")
+
+        button2.addEventListener("click", function calculator(){
+            let result=parseInt(inputthree.value)-parseInt(inputfour.value);
+
+            spanfour.innerHTML=result;
+            console.log(result)
+        })    
+</script>
+<br>
+<div class="box3">
+    <input type="number" class="input5">
+    <span class="span5">*</span>
+    <input type="number" class="input6">
+     <button class="btn3">=</button>
+     <!-- <br> -->
+     <!-- <input type="number" class="input3"> -->
+    <span class="span6"></span>
+</div>
+
+<script>
+    let divthree=document.querySelector(".box3")
+    let inputfive=document.querySelector(".input5")
+    let inputsix=document.querySelector(".input6")
+    let spanfive=document.querySelector(".span5")
+    let spansix=document.querySelector(".span6")
+    let button3=document.querySelector(".btn3")
+
+    button3.addEventListener("click", function calculator(){
+        let result=parseInt(inputfive.value)*parseInt(inputsix.value);
+
+        spansix.innerHTML=result;
+        console.log(result)
+    })
+    </script>
+    <br>
+    <div class="box4">
+        <input type="number" class="input7">
+        <span class="span7">/</span>
+        <input type="number" class="input8">
+         <button class="btn4">=</button>
+         <!-- <br> -->
+         <!-- <input type="number" class="input3"> -->
+        <span class="span8"></span>
+    </div>
+
+    <script>
+        let divfour=document.querySelector(".box4")
+        let inputseven=document.querySelector(".input7")
+        let inputeight=document.querySelector(".input8")
+        let spanseven=document.querySelector(".span7")
+        let spaneight=document.querySelector(".span8")
+        let button4=document.querySelector(".btn4")
+    
+        button4.addEventListener("click", function calculator(){
+            let result=parseInt(inputseven.value)/parseInt(inputeight.value);
+    
+            spaneight.innerHTML=result;
+            console.log(result)
+        })
+        </script>
+</body>
+</html>
